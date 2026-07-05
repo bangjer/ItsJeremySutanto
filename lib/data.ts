@@ -324,6 +324,44 @@ export const internshipGallery: GalleryImage[] = [
     width: 1600,
     height: 900,
   },
+  {
+    src: "/gallery/pdk-team-gathering.jpg",
+    alt: "Team gathering during the internship at PT Pelangi Dwiputra Kimiaraya",
+    caption: "PT Pelangi Dwiputra Kimiaraya · Team",
+    width: 1600,
+    height: 1200,
+  },
+];
+
+export const athleticGallery: GalleryImage[] = [
+  {
+    src: "/gallery/hyrox-manchester-sled.jpg",
+    alt: "Pushing a weighted sled at HYROX Manchester",
+    caption: "HYROX Manchester · Sled push",
+    width: 1152,
+    height: 1536,
+  },
+  {
+    src: "/gallery/hyrox-sandbag.jpg",
+    alt: "Carrying a sandbag at a HYROX event",
+    caption: "HYROX · Sandbag carry",
+    width: 1193,
+    height: 1536,
+  },
+  {
+    src: "/gallery/hyrox-run.jpg",
+    alt: "Running at a HYROX event",
+    caption: "HYROX · Race day",
+    width: 865,
+    height: 1536,
+  },
+  {
+    src: "/gallery/london-half-marathon.jpg",
+    alt: "Finisher medals with friends at a London half marathon",
+    caption: "London Half Marathon",
+    width: 1152,
+    height: 1536,
+  },
 ];
 
 export const about =

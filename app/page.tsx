@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BeyondTheDesk from "@/components/BeyondTheDesk";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
@@ -25,6 +26,7 @@ export default function Home() {
         <Skills />
         <Certifications />
         <Interests />
+        <BeyondTheDesk />
         <About />
       </main>
       <Contact />
