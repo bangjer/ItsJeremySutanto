@@ -49,14 +49,16 @@ export interface SkillGroup {
 
 export interface Certification {
   name: string;
-  issuer?: string;
+  issuer: string;
+  year?: string;
+  /** Path to the proof document, served from /public. */
+  href: string;
 }
 
 export const site = {
   name: "Jeremy Sutanto",
   location: "Based in Indonesia",
-  // Update with your preferred contact email.
-  email: "jeremysuta@gmail.com",
+  email: "jeremysuta280604@gmail.com",
   // Replace with your LinkedIn profile URL.
   linkedin: "https://www.linkedin.com/in/your-profile",
   // The CV file lives in /public — replace the PDF to update it.
@@ -216,10 +218,82 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const certifications: Certification[] = [
-  { name: "Bloomberg Market Concepts", issuer: "Bloomberg" },
-  { name: "Bloomberg ESG", issuer: "Bloomberg" },
-  { name: "Excel Associate", issuer: "Microsoft" },
-  { name: "Financial Foundations: Risk Management" },
+  {
+    name: "Bloomberg Market Concepts",
+    issuer: "Bloomberg for Education",
+    href: "/certificates/bloomberg-market-concepts.png",
+  },
+  {
+    name: "Bloomberg ESG",
+    issuer: "Bloomberg for Education",
+    href: "/certificates/bloomberg-esg.png",
+  },
+  {
+    name: "Excel Associate (Microsoft 365 Apps)",
+    issuer: "Microsoft",
+    year: "2024",
+    href: "/certificates/excel-associate.pdf",
+  },
+  {
+    name: "Mergers & Acquisitions Simulation — Top Performance",
+    issuer: "AmplifyME · UBS",
+    year: "2024",
+    href: "/certificates/mergers-acquisitions-simulation.pdf",
+  },
+  {
+    name: "Global Financial Markets and Instruments",
+    issuer: "Rice University · Coursera",
+    year: "2024",
+    href: "/certificates/global-financial-markets-and-instruments.pdf",
+  },
+  {
+    name: "Behavioral Finance",
+    issuer: "Duke University · Coursera",
+    year: "2023",
+    href: "/certificates/behavioral-finance.pdf",
+  },
+  {
+    name: "Biases and Portfolio Selection",
+    issuer: "Rice University · Coursera",
+    year: "2024",
+    href: "/certificates/biases-and-portfolio-selection.pdf",
+  },
+  {
+    name: "Trading Algorithms",
+    issuer: "Indian School of Business · Coursera",
+    year: "2024",
+    href: "/certificates/trading-algorithms.pdf",
+  },
+  {
+    name: "Decentralized Finance (DeFi) Infrastructure",
+    issuer: "Duke University · Coursera",
+    year: "2024",
+    href: "/certificates/defi-infrastructure.pdf",
+  },
+  {
+    name: "Blockchain and Cryptocurrency Explained",
+    issuer: "University of Michigan · Coursera",
+    year: "2024",
+    href: "/certificates/blockchain-and-cryptocurrency-explained.pdf",
+  },
+  {
+    name: "Programming for Everybody (Getting Started with Python)",
+    issuer: "University of Michigan · Coursera",
+    year: "2024",
+    href: "/certificates/programming-for-everybody-python.pdf",
+  },
+  {
+    name: "Finance Foundations: Risk Management",
+    issuer: "LinkedIn Learning",
+    year: "2024",
+    href: "/certificates/finance-foundations-risk-management.pdf",
+  },
+  {
+    name: "Emotional Intelligence: Cultivating Immensely Human Interactions",
+    issuer: "University of Michigan · Coursera",
+    year: "2024",
+    href: "/certificates/emotional-intelligence.pdf",
+  },
 ];
 
 export const interests: string[] = [
@@ -228,6 +302,8 @@ export const interests: string[] = [
   "ESG & Sustainable Finance",
   "Institutional Investment",
 ];
+
+export const personalInterests: string[] = ["Hyrox", "Running", "Gym"];
 
 export const about =
   "I am focused on building a career across finance and business, combining postgraduate " +
