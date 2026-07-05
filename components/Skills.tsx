@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills" className="border-t border-line py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <SectionHeading index="05" title="Skills" note="Finance · Technical · Business" />
+        <SectionHeading index="06" title="Skills" note="Finance · Technical · Business" />
         <div className="grid gap-12 md:grid-cols-3 md:gap-8">
           {skillGroups.map((group, groupIndex) => (
             <Reveal key={group.group} delay={groupIndex * 80}>

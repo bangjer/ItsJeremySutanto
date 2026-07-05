@@ -31,7 +31,7 @@ export default function Interests() {
   return (
     <section id="interests" className="border-t border-line py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <SectionHeading index="07" title="Interests" note="Professional & personal" />
+        <SectionHeading index="08" title="Interests" note="Professional & personal" />
         <div className="space-y-12">
           <InterestList
             label="Markets & Themes"

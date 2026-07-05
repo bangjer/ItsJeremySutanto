@@ -7,7 +7,7 @@ export default function Contact() {
     <footer id="contact" className="bg-ink text-paper">
       <div className="mx-auto max-w-7xl px-6 pt-20 md:px-10 md:pt-28">
         <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-paper/60">
-          (09) Contact
+          (10) Contact
         </p>
         <Reveal>
           <h2 className="mt-10 font-display text-[clamp(2.75rem,8vw,6.5rem)] font-semibold leading-[0.95] tracking-[-0.03em]">

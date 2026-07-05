@@ -7,7 +7,7 @@ export default function Certifications() {
   return (
     <section id="certifications" className="border-t border-line py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <SectionHeading index="06" title="Certifications" note="Click to open the original" />
+        <SectionHeading index="07" title="Certifications" note="Click to open the original" />
         <ul className="border-b border-line">
           {certifications.map((certification, i) => (
             <li key={certification.name}>

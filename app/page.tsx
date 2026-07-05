@@ -3,6 +3,7 @@ import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Interests from "@/components/Interests";
 import Leadership from "@/components/Leadership";
@@ -19,6 +20,7 @@ export default function Home() {
         <Snapshot />
         <Education />
         <Experience />
+        <Gallery />
         <Leadership />
         <Skills />
         <Certifications />

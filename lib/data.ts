@@ -55,6 +55,15 @@ export interface PersonalInterest {
   note?: string;
 }
 
+export interface GalleryImage {
+  src: string;
+  alt: string;
+  caption: string;
+  /** Intrinsic pixel dimensions, used to reserve space and avoid layout shift. */
+  width: number;
+  height: number;
+}
+
 export const site = {
   name: "Jeremy Sutanto",
   location: "Based in Indonesia",
@@ -284,6 +293,37 @@ export const personalInterests: PersonalInterest[] = [
   { label: "Hyrox", note: "No. 9 fastest Indonesian, Doubles Pro Men" },
   { label: "Running", note: "46-minute 10K" },
   { label: "Gym" },
+];
+
+export const internshipGallery: GalleryImage[] = [
+  {
+    src: "/gallery/hsbc-iipc-event.jpg",
+    alt: "Jeremy Sutanto with others holding books at an HSBC and IIPC event",
+    caption: "HSBC × IIPC · Investment event",
+    width: 1206,
+    height: 1600,
+  },
+  {
+    src: "/gallery/fifgroup-closing-dinner.jpg",
+    alt: "FIFGROUP internship closing dinner group photo in traditional Betawi dress",
+    caption: "FIFGROUP · Internship closing dinner",
+    width: 1600,
+    height: 1067,
+  },
+  {
+    src: "/gallery/fifgroup-team.jpg",
+    alt: "Jeremy Sutanto with the FIFGROUP team in the office",
+    caption: "FIFGROUP · The team",
+    width: 1600,
+    height: 1200,
+  },
+  {
+    src: "/gallery/fifgroup-gathering.jpg",
+    alt: "Large FIFGROUP team gathering in batik attire",
+    caption: "FIFGROUP · Team gathering",
+    width: 1600,
+    height: 900,
+  },
 ];
 
 export const about =
