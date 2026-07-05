@@ -7,7 +7,6 @@ import Hero from "@/components/Hero";
 import Interests from "@/components/Interests";
 import Leadership from "@/components/Leadership";
 import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Snapshot from "@/components/Snapshot";
 
@@ -21,7 +20,6 @@ export default function Home() {
         <Education />
         <Experience />
         <Leadership />
-        <Projects />
         <Skills />
         <Certifications />
         <Interests />

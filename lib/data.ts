@@ -36,12 +36,6 @@ export interface LeadershipItem {
   focus: string[];
 }
 
-export interface Project {
-  title: string;
-  description: string;
-  tags: string[];
-}
-
 export interface SkillGroup {
   group: string;
   items: string[];
@@ -55,12 +49,17 @@ export interface Certification {
   href: string;
 }
 
+export interface PersonalInterest {
+  label: string;
+  /** Optional achievement or detail shown alongside the label. */
+  note?: string;
+}
+
 export const site = {
   name: "Jeremy Sutanto",
   location: "Based in Indonesia",
   email: "jeremysuta280604@gmail.com",
-  // Replace with your LinkedIn profile URL.
-  linkedin: "https://www.linkedin.com/in/your-profile",
+  linkedin: "https://www.linkedin.com/in/jeremy-sutanto/",
   // The CV file lives in /public — replace the PDF to update it.
   cvPath: "/Jeremy-Sutanto-CV.pdf",
 };
@@ -68,8 +67,8 @@ export const site = {
 export const navLinks: NavLink[] = [
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
-  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -156,35 +155,13 @@ export const leadership: LeadershipItem[] = [
     summary: "Writing and editing finance news and market commentary.",
     focus: ["Writing", "Markets"],
   },
-];
-
-export const projects: Project[] = [
   {
-    title: "Corporate Finance Analysis",
-    description:
-      "Company valuation and capital structure analysis applying discounted cash flow and " +
-      "comparable company methods.",
-    tags: ["Valuation", "Corporate Finance"],
-  },
-  {
-    title: "Market Research & Commentary",
-    description: "Written market commentary covering equities, macro themes and industry trends.",
-    tags: ["Research", "Writing"],
-  },
-  {
-    title: "Merger & Digital Economy Research",
-    description: "Research into merger activity and competition dynamics across digital markets.",
-    tags: ["M&A", "Digital Economy"],
-  },
-  {
-    title: "Financial Modelling Practice",
-    description: "Three-statement, scenario and sensitivity modelling built in Excel.",
-    tags: ["Modelling", "Excel"],
-  },
-  {
-    title: "Equity & Fixed Income Analysis",
-    description: "Security analysis and portfolio thinking across equity and fixed income markets.",
-    tags: ["Equities", "Fixed Income"],
+    role: "MinuteFinance",
+    organisation: "Finance Education & Market Commentary",
+    summary:
+      "Creating finance-related educational content and market commentary, simplifying " +
+      "financial topics for a broader audience.",
+    focus: ["Finance Education", "Market Commentary"],
   },
 ];
 
@@ -303,7 +280,11 @@ export const interests: string[] = [
   "Institutional Investment",
 ];
 
-export const personalInterests: string[] = ["Hyrox", "Running", "Gym"];
+export const personalInterests: PersonalInterest[] = [
+  { label: "Hyrox", note: "No. 9 fastest Indonesian, Doubles Pro Men" },
+  { label: "Running", note: "46-minute 10K" },
+  { label: "Gym" },
+];
 
 export const about =
   "I am focused on building a career across finance and business, combining postgraduate " +

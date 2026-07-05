@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import { ArrowDown } from "@/components/icons";
 import { site } from "@/lib/data";
@@ -61,31 +62,15 @@ export default function Hero() {
 
         <div className="lg:col-span-4 xl:col-span-5">
           <Reveal delay={200} className="lg:ml-auto lg:max-w-md">
-            {/*
-              Portrait placeholder — to use your own black & white portrait, drop
-              `portrait.jpg` into /public and replace the <div> below with:
-
+            <div className="relative aspect-[3/4] overflow-hidden border border-line bg-[#f1f1ed]">
               <Image
                 src="/portrait.jpg"
-                alt="Portrait of Jeremy Sutanto"
-                width={480}
-                height={640}
-                className="aspect-[3/4] w-full border border-line object-cover grayscale"
+                alt="Jeremy Sutanto standing on a stone bridge in front of a river and mountains"
+                fill
                 priority
+                sizes="(min-width: 1024px) 480px, 100vw"
+                className="object-cover grayscale"
               />
-
-              (import Image from "next/image" at the top of this file)
-            */}
-            <div className="relative flex aspect-[3/4] items-center justify-center overflow-hidden border border-line bg-[#f1f1ed]">
-              <span
-                aria-hidden="true"
-                className="font-display text-8xl font-semibold tracking-tight text-ink/10"
-              >
-                JS
-              </span>
-              <p className="absolute bottom-4 left-4 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-                Portrait — 3:4 · B&amp;W
-              </p>
             </div>
             <div className="mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
               <span>MSc Business &amp; Finance</span>

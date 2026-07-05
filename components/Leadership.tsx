@@ -6,9 +6,9 @@ export default function Leadership() {
   return (
     <section id="leadership" className="border-t border-line py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <SectionHeading index="04" title="Leadership & Activities" note="Warwick · Leeds" />
+        <SectionHeading index="04" title="Leadership & Activities" note="University & independent" />
         <Reveal>
-          <ul className="grid gap-px border border-line bg-line md:grid-cols-3">
+          <ul className="grid gap-px border border-line bg-line sm:grid-cols-2">
             {leadership.map((item) => (
               <li key={item.role} className="flex flex-col bg-paper p-6 md:p-7">
                 <h3 className="text-base font-semibold leading-snug">{item.role}</h3>
