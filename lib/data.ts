@@ -290,7 +290,7 @@ export const interests: string[] = [
 ];
 
 export const personalInterests: PersonalInterest[] = [
-  { label: "Hyrox", note: "No. 9 fastest Indonesian, Doubles Pro Men" },
+  { label: "Hyrox", note: "No. 9 fastest Indonesian, Doubles Pro Men (as of June 2026)" },
   { label: "Running", note: "46-minute 10K" },
   { label: "Gym" },
 ];
@@ -337,21 +337,21 @@ export const athleticGallery: GalleryImage[] = [
   {
     src: "/gallery/hyrox-manchester-sled.jpg",
     alt: "Pushing a weighted sled at HYROX Manchester",
-    caption: "HYROX Manchester · Sled push",
+    caption: "HYROX Manchester · Open Doubles Men 2026",
     width: 1152,
     height: 1536,
   },
   {
     src: "/gallery/hyrox-sandbag.jpg",
     alt: "Carrying a sandbag at a HYROX event",
-    caption: "HYROX · Sandbag carry",
+    caption: "HYROX London · Pro Doubles Men 2025",
     width: 1193,
     height: 1536,
   },
   {
     src: "/gallery/hyrox-run.jpg",
     alt: "Running at a HYROX event",
-    caption: "HYROX · Race day",
+    caption: "HYROX London · Open Men Relay 2026",
     width: 865,
     height: 1536,
   },
