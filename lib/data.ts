@@ -221,6 +221,12 @@ export const certifications: Certification[] = [
     href: "/certificates/excel-associate.pdf",
   },
   {
+    name: "Business in Practice Simulation — Top Quartile Team",
+    issuer: "Warwick Business School",
+    year: "2026",
+    href: "/certificates/wbs-business-in-practice.pdf",
+  },
+  {
     name: "Mergers & Acquisitions Simulation — Top Performance",
     issuer: "AmplifyME · UBS",
     year: "2024",
