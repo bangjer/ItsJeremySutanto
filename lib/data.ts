@@ -205,11 +205,13 @@ export const certifications: Certification[] = [
   {
     name: "Bloomberg Market Concepts",
     issuer: "Bloomberg for Education",
+    year: "2023",
     href: "/certificates/bloomberg-market-concepts.png",
   },
   {
     name: "Bloomberg ESG",
     issuer: "Bloomberg for Education",
+    year: "2023",
     href: "/certificates/bloomberg-esg.png",
   },
   {
