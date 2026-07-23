@@ -23,9 +23,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | What | Where |
 | --- | --- |
 | All text content (roles, projects, skills, links…) | `lib/data.ts` |
-| Contact email & LinkedIn URL | `site` object in `lib/data.ts` |
-| CV file | Replace `public/Jeremy-Sutanto-CV.pdf` (or change `site.cvPath`) |
-| Certificate proof files | `public/certificates/` — linked from `certifications` in `lib/data.ts` |
+| Contact email & LinkedIn URL | `site` object in `lib/data.ts` || Certificate proof files | `public/certificates/` — linked from `certifications` in `lib/data.ts` |
 | Gallery photos | `public/gallery/` — listed in `internshipGallery` / `athleticGallery` in `lib/data.ts` (include each image's width/height) |
 | Portrait photo | Replace `public/portrait.jpg` (3:4 portrait works best) |
 | Colors & design tokens | `:root` variables in `app/globals.css` |

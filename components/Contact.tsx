@@ -1,5 +1,5 @@
 import Reveal from "@/components/Reveal";
-import { ArrowDown, ArrowUp, ArrowUpRight } from "@/components/icons";
+import { ArrowUp, ArrowUpRight } from "@/components/icons";
 import { site } from "@/lib/data";
 
 export default function Contact() {
@@ -31,16 +31,6 @@ export default function Contact() {
             >
               LinkedIn
               <ArrowUpRight className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-            </a>
-          </div>
-          <div className="mt-12">
-            <a
-              href={site.cvPath}
-              download
-              className="group inline-flex h-12 items-center gap-2 bg-paper px-7 text-sm font-medium text-ink transition-colors duration-200 hover:bg-white"
-            >
-              Download CV
-              <ArrowDown className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5" />
             </a>
           </div>
         </Reveal>

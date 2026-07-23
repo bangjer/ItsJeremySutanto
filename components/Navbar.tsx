@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { navLinks, site } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -40,34 +40,25 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="flex items-center">
-          <a
-            href={site.cvPath}
-            download
-            className="hidden h-10 items-center bg-ink px-5 text-sm font-medium text-paper transition-colors duration-200 hover:bg-accent md:inline-flex"
-          >
-            Download CV
-          </a>
-          <button
-            type="button"
-            onClick={() => setOpen(!open)}
-            aria-expanded={open}
-            aria-controls="mobile-menu"
-            aria-label={open ? "Close menu" : "Open menu"}
-            className="-mr-2 inline-flex h-11 w-11 flex-col items-center justify-center gap-1.5 md:hidden"
-          >
-            <span
-              className={`h-px w-6 bg-ink transition-transform duration-200 ${
-                open ? "translate-y-[3.5px] rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`h-px w-6 bg-ink transition-transform duration-200 ${
-                open ? "-translate-y-[3.5px] -rotate-45" : ""
-              }`}
-            />
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setOpen(!open)}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          className="-mr-2 inline-flex h-11 w-11 flex-col items-center justify-center gap-1.5 md:hidden"
+        >
+          <span
+            className={`h-px w-6 bg-ink transition-transform duration-200 ${
+              open ? "translate-y-[3.5px] rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`h-px w-6 bg-ink transition-transform duration-200 ${
+              open ? "-translate-y-[3.5px] -rotate-45" : ""
+            }`}
+          />
+        </button>
       </nav>
 
       {open ? (
@@ -84,16 +75,6 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="pt-5">
-              <a
-                href={site.cvPath}
-                download
-                onClick={() => setOpen(false)}
-                className="inline-flex h-12 items-center bg-ink px-6 text-sm font-medium text-paper"
-              >
-                Download CV
-              </a>
-            </li>
           </ul>
         </div>
       ) : null}

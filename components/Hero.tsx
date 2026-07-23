@@ -46,12 +46,10 @@ export default function Hero() {
                 View Experience
               </a>
               <a
-                href={site.cvPath}
-                download
-                className="group inline-flex h-12 items-center gap-2 border border-ink px-7 text-sm font-medium transition-colors duration-200 hover:bg-ink hover:text-paper"
+                href="#contact"
+                className="inline-flex h-12 items-center border border-ink px-7 text-sm font-medium transition-colors duration-200 hover:bg-ink hover:text-paper"
               >
-                Download CV
-                <ArrowDown className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5" />
+                Get in touch
               </a>
             </div>
             <p className="mt-10 font-mono text-xs uppercase tracking-[0.3em] text-muted">

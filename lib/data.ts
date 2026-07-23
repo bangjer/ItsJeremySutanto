@@ -69,8 +69,6 @@ export const site = {
   location: "Based in Indonesia",
   email: "jeremysuta280604@gmail.com",
   linkedin: "https://www.linkedin.com/in/jeremy-sutanto/",
-  // The CV file lives in /public — replace the PDF to update it.
-  cvPath: "/Jeremy-Sutanto-CV.pdf",
 };
 
 export const navLinks: NavLink[] = [
