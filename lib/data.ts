@@ -369,9 +369,3 @@ export const athleticGallery: GalleryImage[] = [
     height: 1536,
   },
 ];
-
-export const about =
-  "I am focused on building a career across finance and business, combining postgraduate " +
-  "study in the UK with practical experience in treasury, funding, accounting and financial " +
-  "analysis. My interests sit across capital markets, corporate finance, ASEAN financial " +
-  "markets and sustainable finance.";

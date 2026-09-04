@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import BeyondTheDesk from "@/components/BeyondTheDesk";
 import Certifications from "@/components/Certifications";
 import Contact from "@/components/Contact";
@@ -27,7 +26,6 @@ export default function Home() {
         <Certifications />
         <Interests />
         <BeyondTheDesk />
-        <About />
       </main>
       <Contact />
     </>
